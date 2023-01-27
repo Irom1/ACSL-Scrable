@@ -28,10 +28,6 @@ public class Tile {
         return score;
     }
     private int scorePosition(int position) {
-        // The squares that are every other multiple of 3 ( 3, 9, 15...) are Double Letter score squares.
-        // The squares that are multiples of 5 and not used above are Triple Letter score squares.
-        // The squares that are multiples of 7 and not used above are Double Word score squares.
-        // The squares that are multiples of 8 and not used above are Triple Word score squares.
         int score = 1;
         if (position % 6 == 3) score = 2;
         else if(position % 5 == 0) score = 3;
