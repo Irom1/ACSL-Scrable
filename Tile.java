@@ -33,7 +33,7 @@ public class Tile {
         // The squares that are multiples of 7 and not used above are Double Word score squares.
         // The squares that are multiples of 8 and not used above are Triple Word score squares.
         int score = 1;
-        if (position % 3 == 0 && position % 2 == 1) score = 2;
+        if (position % 6 == 3) score = 2;
         else if(position % 5 == 0) score = 3;
         else if(position % 7 == 0) wordMultiplier = 2;
         else if(position % 8 == 0) wordMultiplier = 3;
